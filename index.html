@@ -17,6 +17,9 @@
         </p>
 
         <div class="stats">
+          <div><span>Niveau</span><strong id="level-label">1</strong></div>
+          <div><span>Progression</span><strong id="progress">0%</strong></div>
+          <div><span>Munitions</span><strong id="ammo">0</strong></div>
           <div><span>Score</span><strong id="score">0</strong></div>
           <div><span>Distance</span><strong id="distance">0 m</strong></div>
           <div><span>Vitesse</span><strong id="speed">1.0x</strong></div>
@@ -24,6 +27,11 @@
           <div><span>Meilleur score</span><strong id="best">0</strong></div>
           <div><span>État</span><strong id="state">Prêt</strong></div>
         </div>
+
+        <label class="level-select" for="level">
+          <span>Niveau jouable</span>
+          <select id="level"></select>
+        </label>
 
         <div class="controls">
           <button id="start">Démarrer</button>
@@ -33,8 +41,9 @@
 
         <p class="help">
           Contrôles : <strong>Espace / Flèche haut / Z</strong> pour sauter,
-          <strong>P</strong> pour pause. <br />Évite les obstacles au sol et les
-          drones en hauteur.
+          <strong>F / X / clic canvas</strong> pour tirer,
+          <strong>P</strong> pour pause. <br />Évite les obstacles, récupère les
+          bonus de munitions et termine les niveaux pour débloquer la suite.
         </p>
       </section>
 

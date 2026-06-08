@@ -72,18 +72,43 @@ body {
   margin: 0.8rem 0;
 }
 
-button {
+.level-select {
+  display: grid;
+  gap: 0.35rem;
+  margin: 0.8rem 0;
+  font-size: 0.92rem;
+}
+
+.level-select span {
+  color: #b8cbe0;
+}
+
+button,
+select {
   flex: 1;
   border: 1px solid #38516d;
   background: #22354b;
   color: var(--text);
   border-radius: 10px;
   padding: 0.55rem;
+}
+
+button {
   cursor: pointer;
 }
 
-button:hover {
+select {
+  width: 100%;
+}
+
+button:hover,
+select:hover {
   border-color: var(--accent);
+}
+
+button:disabled,
+select option:disabled {
+  opacity: 0.5;
 }
 
 .help {

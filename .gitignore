@@ -1,0 +1,23 @@
+# Python cache and virtual environments
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+
+# Build outputs and packaged binaries
+build/
+dist/
+*.egg-info/
+*.exe
+*.dll
+*.pyd
+*.zip
+*.lnk
+
+# Local/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
